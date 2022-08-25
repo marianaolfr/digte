@@ -156,6 +156,28 @@ h2 {
    border-radius: 15px;
    padding: 1em;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   position: relative;
+   overflow: hidden;
+}
+
+.box img {
+   width: 100%;
+   transition: all linear 0.4s;
+}
+
+img.img__hover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+}
+
+.box:hover img {
+   opacity: 0;
+}
+
+.box:hover img.img__hover {
+   opacity: 1;
 }
 
 .box button {
@@ -298,7 +320,6 @@ input[type='text'] {
    width: 40%;
    padding-left: 9rem;
    outline: none;
-   font-family: 'Open Sans';
    font-weight: bold;
    height: 50px;
    color: #9c9c9c;
