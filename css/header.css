@@ -8,11 +8,12 @@
 
 header {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    height: 15vh;
    min-height: 80px;
    background-color: var(--orange-first);
+   width: 100%;
 }
 
 .header__all {
@@ -84,6 +85,13 @@ header {
 .contact__wrapper__button:hover {
    background-color: white;
    color: var(--orange-first);
+}
+
+.language__dropdown {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .language__dropdown img {

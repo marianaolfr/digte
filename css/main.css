@@ -18,18 +18,21 @@
    padding: 20px;
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: center;
 }
 
 .main__content {
    display: flex;
    flex-direction: column;
-   width: 30%;
+   width: 23%;
+   margin: 0 100px;
 }
 
 h1 {
    color: white;
    font-size: 3rem;
+   line-height: 4.5rem;
+   margin-bottom: 4.5rem;
 }
 
 .main__content p {
@@ -37,6 +40,7 @@ h1 {
    line-height: 2rem;
    color: white;
    margin: 5px;
+   margin-bottom: 2.5rem;
    max-width: 450px;
 }
 
@@ -46,6 +50,7 @@ h1 {
    border-radius: 0.5rem;
    width: 50%;
    color: white;
+   cursor: pointer;
 }
 
 .demo__wrapper__button:hover {
@@ -132,20 +137,16 @@ h2 {
    gap: 1em;
 }
 .third__content p {
-   width: 50%;
+   width: 30%;
+   margin-right: 2rem;
+   line-height: 1.5rem;
 }
 
 .third__content img {
+   margin-left: 2rem;
    border-radius: 150px;
    max-height: 300px;
    max-width: 100%;
-}
-.fifth__content { 
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
 }
 
 .boxes {
@@ -163,28 +164,6 @@ h2 {
    border-radius: 15px;
    padding: 1em;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-   position: relative;
-   overflow: hidden;
-}
-
-.box img {
-   width: 100%;
-   transition: all linear 0.4s;
-}
-
-img.img__hover {
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0;
-}
-
-.box:hover img {
-   opacity: 0;
-}
-
-.box:hover img.img__hover {
-   opacity: 1;
 }
 
 .box button {
@@ -208,14 +187,16 @@ img.img__hover {
 }
 
 .horizontal__section {
-   width: 50%;
-   padding: 20px 0px;
+   width: 50rem;
+   height: 13rem;
    object-fit: cover;
    object-position: 50% 50%;
 }
 
 .horizontal__section__compliment {
-   width: 100%;
+   display: flex;
+   justify-content: center;
+   width: 53rem;
    height: auto;
    object-fit: cover;
    object-position: 50% 50%;
@@ -234,20 +215,22 @@ img.img__hover {
 }
 
 .all__brands__compliment {
-   grid-template-columns: 1fr 1fr 1fr;
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   scroll-padding-left: 20px;
    display: grid;
-   gap: 20px;
    width: 100%;
-   padding: 10px;
-  
-   
+   grid-auto-flow: column;
+   gap: 40px;
+   padding-left: 5rem;
+   justify-content: space-between;
 }
 
 .brand-logo {
    display: flex;
    flex-direction: row;
    align-items: center;
-   margin: 15px 0px;
+   gap: 3em;
    color: rgb(124, 118, 118);
    border-radius: 15px;
    padding: 1em;
@@ -258,8 +241,9 @@ img.img__hover {
 .brand-logo-compliment {
    display: flex;
    flex-direction: column-reverse;
-   justify-content: space-evenly;
+   justify-content: center;
    align-items: center;
+   gap: 3em;
    color: rgb(124, 118, 118);
    border-radius: 15px;
    padding: 1em;
@@ -267,6 +251,7 @@ img.img__hover {
    scroll-snap-align: start;
    text-align: justify;
    line-height: 1.5rem;
+   width: 50rem;
 }
 
 .brand {
@@ -294,7 +279,7 @@ img.img__hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 20px 0px;
+   gap: 1rem;
 }
 
 .newsletter {
@@ -324,6 +309,7 @@ input[type='text'] {
    width: 40%;
    padding-left: 9rem;
    outline: none;
+   font-family: 'Open Sans';
    font-weight: bold;
    height: 50px;
    color: #9c9c9c;
