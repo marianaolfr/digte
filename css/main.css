@@ -140,6 +140,13 @@ h2 {
    max-height: 300px;
    max-width: 100%;
 }
+.fifth__content { 
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
 
 .boxes {
    display: flex;
@@ -201,15 +208,15 @@ img.img__hover {
 }
 
 .horizontal__section {
-   width: 50rem;
-   height: 13rem;
+   width: 50%;
+   padding: 20px 0px;
    object-fit: cover;
    object-position: 50% 50%;
 }
 
 .horizontal__section__compliment {
-   width: 120rem;
-   height: 25rem;
+   width: 100%;
+   height: auto;
    object-fit: cover;
    object-position: 50% 50%;
 }
@@ -227,22 +234,20 @@ img.img__hover {
 }
 
 .all__brands__compliment {
-   overflow-x: scroll;
-   scroll-snap-type: x mandatory;
-   scroll-padding-left: 20px;
+   grid-template-columns: 1fr 1fr 1fr;
    display: grid;
+   gap: 20px;
    width: 100%;
-   grid-auto-flow: column;
-   gap: 40px;
-   padding-left: 20px;
-   justify-content: space-between;
+   padding: 10px;
+  
+   
 }
 
 .brand-logo {
    display: flex;
    flex-direction: row;
    align-items: center;
-   gap: 3em;
+   margin: 15px 0px;
    color: rgb(124, 118, 118);
    border-radius: 15px;
    padding: 1em;
@@ -253,9 +258,8 @@ img.img__hover {
 .brand-logo-compliment {
    display: flex;
    flex-direction: column-reverse;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
-   gap: 3em;
    color: rgb(124, 118, 118);
    border-radius: 15px;
    padding: 1em;
@@ -290,7 +294,7 @@ img.img__hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 1rem;
+   margin: 20px 0px;
 }
 
 .newsletter {
