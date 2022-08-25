@@ -53,7 +53,7 @@ h1 {
    color: var(--orange-first);
 }
 
-.main__image__wrapper{
+.main__image__wrapper {
    width: 30%;
 }
 
@@ -71,7 +71,7 @@ h1 {
 h2 {
    font-size: 2rem;
    text-align: center;
-   padding: 3rem;
+   padding: 2rem;
 }
 
 .second__content p {
@@ -85,7 +85,7 @@ h2 {
    align-items: center;
    justify-content: center;
 }
-.one{
+.one {
    width: 50%;
 }
 
@@ -131,7 +131,7 @@ h2 {
    text-align: justify;
    gap: 1em;
 }
-.third__content p{ 
+.third__content p {
    width: 50%;
 }
 
@@ -178,6 +178,143 @@ h2 {
    text-align: center;
 }
 
+.horizontal__section {
+   width: 50rem;
+   height: 13rem;
+   object-fit: cover;
+   object-position: 50% 50%;
+}
+
+.horizontal__section__compliment {
+   width: 120rem;
+   height: 25rem;
+   object-fit: cover;
+   object-position: 50% 50%;
+}
+
+.all__brands {
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   scroll-padding-left: 20px;
+   display: grid;
+   width: 100%;
+   grid-auto-flow: column;
+   gap: 40px;
+   padding-left: 20px;
+   justify-content: space-between;
+}
+
+.all__brands__compliment {
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   scroll-padding-left: 20px;
+   display: grid;
+   width: 100%;
+   grid-auto-flow: column;
+   gap: 40px;
+   padding-left: 20px;
+   justify-content: space-between;
+}
+
+.brand-logo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 3em;
+   color: rgb(124, 118, 118);
+   border-radius: 15px;
+   padding: 1em;
+   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+   scroll-snap-align: start;
+}
+
+.brand-logo-compliment {
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+   gap: 3em;
+   color: rgb(124, 118, 118);
+   border-radius: 15px;
+   padding: 1em;
+   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+   scroll-snap-align: start;
+   text-align: justify;
+   line-height: 1.5rem;
+}
+
+.brand {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 200px;
+   max-height: 150px;
+   width: auto;
+   height: auto;
+}
+
+.brand-compliment {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 200px;
+   max-height: 150px;
+   width: auto;
+   height: auto;
+}
+
+.img__name {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.newsletter {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.fill__form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   padding: 2rem;
+}
+
+.fill__form button {
+   background-color: white;
+   cursor: pointer;
+   color: var(--orange-first);
+}
+
+input[type='text'] {
+   border: 2px solid #2d2d2d;
+   border-radius: 30px 0 0 30px;
+   width: 40%;
+   padding-left: 9rem;
+   outline: none;
+   font-family: 'Open Sans';
+   font-weight: bold;
+   height: 50px;
+   color: #9c9c9c;
+}
+
+.form__wrapper__button {
+   border: 2px solid var(--orange-first);
+   padding: 0.75rem 1rem;
+   border-radius: 0.5rem;
+}
+
+.form__wrapper__button:hover {
+   background-color: var(--orange-first);
+   color: white;
+}
+
 .last__content {
    background: rgb(242, 119, 44);
    background: linear-gradient(
@@ -188,9 +325,11 @@ h2 {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-evenly;
    width: 100%;
-   height: 15vw;
+   height: 8vw;
+   gap: 1rem;
+   padding: 2rem;
 }
 
 h3 {
