@@ -8,3 +8,7 @@ languageButtons.forEach((button) => {
       button.classList.add('selected');
    });
 });
+
+function changeImg(object, newImage) {
+   document.getElementById('img__principal').src = './img/Comunicacao.webp';
+}
